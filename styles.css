@@ -7,3 +7,11 @@ body {
     background:white;
     box-shadow: 10px 10px 5px grey;
 }
+.h1{
+    font-family:Arial;
+    font-size: 40px;
+}
+.p{
+    font-family:Arial;
+    font-size: 25px;
+}
