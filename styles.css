@@ -1,6 +1,9 @@
 body {
+    background:black;
     text-align: center;
+    margin:50px;
 }
 #main-content{
+    background:white;
     box-shadow: 10px 10px 5px grey;
 }
