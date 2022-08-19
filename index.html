@@ -1,17 +1,90 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <title>About YiRen</title>
 </head>
 <body>
-    <div id="main-content">
-        <h1 class="h1">About Me</h1>
-        <p class="p1">Hello, My name is Yi Ren Mai, I am currently a hunter college student. I am currently taking 
-            computer Operating Systems, a Digital Product Development, and a Practical Web Development class.
-        </p>
+    <header id="header">
+        <ul>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <!-- <li>Contact</li> -->
+        </ul>
+    </header>       
+    <div id="intro">
+        <h1 class="intro-text" id="intro-name">Yi Ren Mai</h1>
     </div>
+    <main class="main">
+        <a id="aboutme"></a>
+        <h1 class="main-title" >About Me</h1><hr>
+
+        <article class="aboutme-container">
+            <div class="aboutme-left">
+                <div class="coin">
+                    <div class="coin-flip">
+                        <div class="coin-front">
+                            <img src="imgs/pfp.jpg" id="yiren-pic">
+                        </div>
+                        <div class="coin-back">
+                            <img src="imgs/thinker.png" id="thinker-pic">
+                        </div>
+                    </div>
+                </div>
+                <h2 id="hover-me">Hover me! 😀</h2>
+            </div>
+            
+            <div class="aboutme-right">
+                <div class="aboutme-intro">
+                    <h3> <strong>H</strong>ello, I am a software engineer who is avid in building programs that others will enjoy.I am proficient in C++,
+                        and have some experience with javascript and React. I am a learner a trier and a improver. 
+                    </h3>
+                </div>
+                <img src="imgs/engineer-icon.png" id="engineer-icon">
+                <h2>Hunter College</h2>
+                <h4>August 2020 - present</h4>
+
+                <img src="imgs/ctp-icon.png" id="engineer-icon">
+                <h2>CUNY Tech Prep</h2>
+                <h4>August 2022 - present</h4>
+            </div>
+
+        </article>
+
+        <article class="projects-container" id="projects">
+            <a id="projects"></a>
+            <h1 class="main-title">Projects</h1><hr>
+
+            <div class="projects">
+                <h2 class="project-name">FitTrack</h2>
+                <img src="imgs/fitTrack.gif" id="fit-track">
+                <h2 class="project-name">Simple Tweet</h2>
+                <img src="imgs/simpleTweet.gif" id="simple-tweet">
+                <h2 class="project-name">Campus Management</h2>
+                <img src="imgs/campus_management.gif" id="campus-management">
+            </div>      
+            
+        </article>
+
+        <article class="skills">   
+            <a id="skills"></a>
+            <h1 class="main-title">Skills</h1><hr>
+            <div class="skills-container">
+                <img src="/imgs/skills/3pack.png">
+                <img src="/imgs/skills/andriodstudio.png">
+                <img src="/imgs/skills/c++.png">
+                <img src="/imgs/skills/github.png">
+                <img src="/imgs/skills/java.png">
+                <img src="/imgs/skills/python.png">
+            </div>
+        </article>
+
+        <!-- <article id="contact">
+            <div class="main-titles">Contact</div>
+            <div class="main-content"></div>
+        </article> -->
+        
+    </main>
 </body>
 </html>

@@ -1,17 +1,229 @@
+html{
+    scroll-behavior: smooth;
+}
 body {
-    background:black;
+    background:rgb(253, 253, 253);
+    font-family: 'Merriweather', serif;
+    margin: 0%;
     text-align: center;
-    margin:50px;
 }
-#main-content{
-    background:white;
-    box-shadow: 10px 10px 5px grey;
+/* 
+
+
+Beginning section
+
+
+ */
+
+.intro-text{
+    position: relative;
+    top: 40%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
-.h1{
-    font-family:Arial;
+#intro-name{
+    font-size: 7em;
+}
+#intro-quote{
+    font-size: 2em;
+}
+#intro{
+    background: rgb(9,2,124);
+    background: radial-gradient(circle, rgb(8, 44, 92) 0%, rgb(0, 116, 184) 40%, rgb(3, 1, 41) 100%);
+    color:white;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    /* visibility: hidden; */
+}
+/* 
+
+
+header section
+
+
+*/
+header{
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(0, 116, 184);
+}
+header li{
+    font-size: 30px;
+    margin: 0 20px;
+    width: 20%;
+    z-index: 10;
+
+}
+li {
+    font-size: 16px;
+    text-transform: uppercase;
+    display:inline-block;
+    width:10%;
+    
+}
+strong{
+    font-size: 50px;
+    line-height: 0% !important;
+}
+h1{
     font-size: 40px;
+    width: 100%;
 }
-.p{
-    font-family:Arial;
-    font-size: 25px;
+hr{
+    border-top: 8px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 0 10%;
+}
+
+
+/* 
+
+
+About Me Section
+
+
+ */
+
+
+.aboutme-container{
+    margin-top: 10%;
+    display: flex;
+    width: 100%;
+}
+
+/* left side of about me section */
+.aboutme-left{
+    padding: 0 10%;
+    display: inline-block;
+    width: auto;
+}
+#hover-me{
+    display: inline-block;
+    width: 100%;
+}
+
+.coin {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;   
+    display: inline-block;
+}
+.coin-flip{
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.coin:hover .coin-flip {
+    transform: rotateY(180deg);
+}
+
+.coin-front, .coin-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.coin-back{
+    transform: rotateY(180deg);
+}
+#yiren-pic, #thinker-pic{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: flex;
+}
+
+
+/* right side about me section */
+.aboutme-right{
+    display: inline-block;
+    align-items: center;
+    width: auto;
+    padding-right: 10%;
+}
+.aboutme-intro{
+    width: auto;
+    text-align: justify;
+    line-height: 2;
+    font-size: 16px;
+}
+.aboutme-right h2,h4{
+    width: 100%;
+    
+}
+.aboutme-right img{
+    width: 50px;
+    height: 50px;
+}
+
+/* 
+
+
+Project section
+
+
+ */
+
+
+.projects-container{
+    display: block;
+}
+.project-name{
+    padding-top: 5%;
+    text-decoration: underline;
+}
+.projects-container img{
+    display: block;
+    margin: auto;
+}
+#campus-management{
+    width: 50%;
+}
+
+/* 
+
+
+Skills section
+
+
+ */
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: center;
+}
+.skills-container img{
+    width: 200px;
+    margin: 5% 5%;
+
+}
+
+/* misc */
+a{
+    display: block;
+    height: 5%;
+}
+a:visited{
+    color:inherit;
+}
+#main{
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 100%;
+    
+}
+*{
+    /* border: 1px solid black; */
+    box-sizing: border-box;
 }
