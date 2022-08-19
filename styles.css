@@ -212,6 +212,7 @@ Skills section
 a{
     display: block;
     height: 5%;
+    color: black;
 }
 a:visited{
     color:inherit;
